@@ -4,10 +4,12 @@
 #
 Name     : mvn-maven-filtering
 Version  : 1.2
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar
-Source1  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.pom
+Source1  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
+Source2  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom
+Source3  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -32,8 +34,14 @@ data components for the mvn-maven-filtering package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.1
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.1
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2
 
 
 %files
@@ -41,5 +49,7 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/shared
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
+/usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar
 /usr/share/java/.m2/repository/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.pom
