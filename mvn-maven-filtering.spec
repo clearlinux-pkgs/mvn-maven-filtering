@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-filtering
 Version  : 1.2
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.2/maven-filtering-1.2.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
